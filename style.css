@@ -1,0 +1,310 @@
+/* GLOBAL LAYOUT */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #707070;
+  line-height: 1.6;
+  background-color: rgba(34, 31, 31, 0.2);
+  background-image: url("./img/full-background.png");
+  background-position: center;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h2,
+h3 {
+  font-family: "Lora", serif;
+  color: #143774;
+  font-weight: 400;
+}
+
+.article-title {
+  font-size: 2rem;
+}
+
+.widget-title {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+a {
+  color: #1792d2;
+}
+
+.article-read-more {
+  text-transform: uppercase;
+  color: #1792d2;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+span {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+/* NAVIGATION */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #143774;
+  text-align: center;
+  font-weight: 300;
+}
+
+header p {
+  font-size: 0.65rem;
+  color: #1792d2;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+nav li {
+  white-space: nowrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.25em;
+  border-bottom: 2px solid #f8f8f8;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  color: #1792d2;
+  border-color: #1792d2;
+}
+
+@media (max-width: 870px) {
+  .header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+/* MAIN LAYOUT */
+
+.image-featured {
+  margin: 0.5em 0;
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+  margin-bottom: 3em;
+}
+
+.article-recent-img {
+  order: 1;
+}
+
+.article-recent-content {
+  order: 2;
+}
+
+.article-recent img {
+  margin-bottom: 0.5em;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.article-featured {
+  border-bottom: #70707036 2px solid;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-body {
+  margin: 1.2em 0;
+}
+
+main hr {
+  margin: 2em 0;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.sidebar-widget {
+  border: #ebebeb 20px solid;
+  padding: 2em;
+}
+
+.widget-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: inherit;
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+}
+
+.widget-post-title {
+  margin-top: 0.5em;
+  line-height: 1.4;
+}
+
+.widget-body {
+  margin-top: 1.2em;
+  width: 100%;
+}
+
+.sidebar hr {
+  margin: 1.2em 0;
+}
+
+@media (min-width: 800px) {
+  .main-content {
+    flex-direction: row;
+  }
+  .article-recent {
+    flex-direction: row;
+  }
+  .article-recent-content {
+    width: 70%;
+  }
+  .article-recent-img {
+    width: 25%;
+  }
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-featured img {
+    order: -2;
+    margin-top: 0;
+  }
+  .article-featured span {
+    order: -1;
+    margin-bottom: 1em;
+  }
+  .article-recent img {
+    width: 100%;
+    min-height: 250px;
+    object-fit: cover;
+  }
+  #imgDeco {
+    object-position: left;
+  }
+}
+
+/* ABOUT ME */
+
+.about-title {
+  font-size: 1.5rem;
+  margin-top: 1.2em;
+}
+
+.about-topic {
+  color: #1792d2;
+}
+
+.about-topic {
+  margin: 1.2em 0;
+}
+
+.image-full {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #143774;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 3em;
+  margin-top: 2.5em;
+}
+
+footer > p {
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+footer > p + p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin-top: 0.5em;
+}
