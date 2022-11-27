@@ -4,6 +4,6 @@
 
 ### > Mobile First + Responsive Layout
 
-![See Website](https://livingthesimplelifeweb.netlify.app/)
+[See Website](https://livingthesimplelifeweb.netlify.app/)
 
 </samp>
